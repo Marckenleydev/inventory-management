@@ -13,6 +13,7 @@ import {
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { SidebarLink } from './SidebarLink';
+import Image from 'next/image';
 
 const Sidebar = () => {
     const dispatch = useDispatch();
@@ -30,8 +31,14 @@ const Sidebar = () => {
     <div className={sidebarClassNames}>
         {/* Top Logo */}
         <div className={`flex gap-3 justify-between md:justify-normal items-center pt-8 ${isSidebarCollapsed ? "px-5" : "px-8"}`}>
-            <div>Logo</div>
-            <h1 className={`font-extrabold text-2xl ${isSidebarCollapsed ? "hidden" : "block" }`}>MARCKENLEY</h1>
+              
+                                <Image src="https://s3-inventorymanagemntbucket.s3.eu-west-2.amazonaws.com/logo.png"
+                                alt="logo"
+                                width={27}
+                                height={27}
+                                className='rounded w-8'
+                                />
+            <h1 className={`font-extrabold text-2xl ${isSidebarCollapsed ? "hidden" : "block" }`}>INVENTORY</h1>
 
             <button className='md:hidden px-3 py-3 bg-gray-100 rounded-full hover:bg-blue-100'>
                 <Menu className='w-4 h-4' onClick={toogleSidebar}/>
