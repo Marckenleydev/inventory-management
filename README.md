@@ -1,9 +1,9 @@
 ## Project Screenshots
 
-### Homepage
+### AWS-Diagram
 ![AWS_diagram Screenshot](aws-diagram.jpeg)
 
-### Dashboard
+### SQL-Diagram
 ![Sql_diagram_design Screenshot](sql-diagram.jpeg)
 
 
